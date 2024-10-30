@@ -1,0 +1,31 @@
+// Esquema simples de UML para o curso DIO 
+
+@startuml
+interface Dispositivo{
+    +ligar()
+    +desligar()
+}
+
+class ReprodutorMusical{
+    +tocarMusica()
+    +pausar()
+    +proximaFaixa()
+    +faixaAnterior()
+}
+
+class AparelhoTelefonico{
+    +fazerChamada()
+    +receberChamada()
+    +acessarContatos()
+}
+
+class NavegadorInternet{
+    +abrirPagina()
+    +atualizarPagina()
+    +adicionarFavoritos()
+}
+
+Dispositivo <|-- ReprodutorMusical
+Dispositivo <|-- AparelhoTelefonico
+Dispositivo <|-- NavegadorInternet
+@enduml
